@@ -61,6 +61,7 @@ function Films() {
               sx={styleCartMedia}
               image={filmDetail.image}
               title="film image"
+              
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">

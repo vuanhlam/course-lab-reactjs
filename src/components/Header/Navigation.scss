@@ -1,8 +1,15 @@
 
 .header {
-
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-image: linear-gradient(180deg,rgba(0,0,0,.7) 5%,transparent);
+  transition: all .7s;
+  
   .navbar {
-    height: 78.6px;
+    height: 90px;
     background:  #141414;
     display: flex;
     justify-content: space-between;
@@ -11,9 +18,13 @@
     background-color: transparent;
   }
 
+  .header_black {
+    background: #141414;
+  }
+
   .navbar__list {
     display: inline-flex;
-    line-height: 78.6px;
+    line-height: 90px;
     padding: 0;
     margin: 0;
   }

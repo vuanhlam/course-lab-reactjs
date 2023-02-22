@@ -8,8 +8,8 @@ const listFilms = [
     },
     {
         id: 2,
-        image: 'https://cdn.galaxycine.vn/media/2023/2/8/300x450_1675829207954.jpg',
-        Title: 'Đàm Phán',
+        image: 'https://image.tmdb.org/t/p/w500//t6HIqrRAclMCA60NsSmeqe9RmNV.jpg',
+        Title: 'Avatar The Way Of Water',
         Year: 1987,
         Nation: 'Germany'
     },

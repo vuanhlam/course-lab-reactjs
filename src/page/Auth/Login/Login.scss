@@ -1,0 +1,69 @@
+.Login {
+    background-image: url('../../../assets/background-img.jpg');
+    height: 1107px;
+    background-color: transparent;
+    background-size: cover;
+    position: relative;
+}
+
+.Login__header {
+    position: absolute;
+    top: 0;
+    height: 90px;
+    z-index: 1;
+    color: red;
+    width: 100%;
+}
+
+.Login__header--logo {
+    width: 167px;
+    height: 45px;
+    margin-left: 3%;
+    line-height: 90px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.Login_body {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 450px;
+    height: 660px;
+    margin-top: 90px;
+    background-color: transparent;
+    background-color: #000;
+    color: #333;
+    transform: translateX(-50%);
+    z-index: 1;
+    
+}
+
+.Login_footer {
+    margin-top: 90px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 262px;
+    background: rgba(0,0,0,.75);
+    z-index: 1;
+}
+
+.Login__form {
+    padding: 60px 68px;
+    
+}
+
+.Login .concord-img-gradient {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background-image: linear-gradient(0deg,rgba(0,0,0,.8) 0,transparent 60%,rgba(0,0,0,.8));
+}
+
+

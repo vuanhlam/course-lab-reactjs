@@ -1,0 +1,122 @@
+
+.header {
+
+  .navbar {
+    height: 78.6px;
+    background:  #141414;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 48px;
+    background-color: transparent;
+  }
+
+  .navbar__list {
+    display: inline-flex;
+    line-height: 78.6px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar__item {
+    list-style-type: none;
+  }
+
+  .navbar__link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  .navbar__option {
+
+
+    label {
+      position: relative;
+      width: 480px;
+      height: 180px;
+      display: block;
+      background: url('../../assets/light.gif');
+      background-size: cover;
+      background-position: center;
+      border: 2px solid rgba(198, 247, 253, 0.3);
+      border-radius: 100px;
+      cursor: pointer;
+      transition: 1s ease;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+      height: 28px;
+      width: 80px;
+    }
+
+    label::after {
+      content: "";
+      position: absolute;
+      height: 20px;
+      width: 20px;
+      background: #f2f2f2;
+      border-radius: 50%;
+      top: 4px;
+      left: 4px;
+      transition: 0.8s ease;
+      box-shadow: 0 0px 10px rgb(0 0 0 / 20%);
+    }
+
+    label::before {
+      content: '';
+      position: absolute;
+      height: 18px;
+      width: 18px;
+      border: 3px solid rgba(198, 247, 253, 0.3);
+      border-radius: 50%;
+      top: 2px; 
+      left: 2px;
+      transition: 0.8s ease;
+      box-shadow: 0 0 50px rgb(0 0 0 / 18%);
+    }
+
+    .background {
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      background: #fff;
+      z-index: -1;
+      transition: all 1s ease;
+    }
+
+    input:checked ~ label::after {
+      left: 76px;
+      transform: translateX(-100%);
+      background: #777ba5;
+
+    }
+
+    input:checked ~ label::before {
+      left: 78px;
+      border: 3px solid rgba(90, 79, 136, 0.2);
+      transform: translateX(-100%);
+    }
+
+    input:checked ~ label {
+      background: url('../../assets/dark.gif');
+      background-size: cover;
+      background-position: center;
+      border: 2px solid rgba(90, 79, 136, 0.2);
+      height: 28px;
+      width: 80px;
+    }
+
+    // input:checked ~ .background {
+    //   background: #0e377c;
+    // }
+
+    input:checked .navbar__option .navbar {
+      background: #0e377c;
+    } 
+
+    input {
+      display: none;
+    }
+
+  }
+}

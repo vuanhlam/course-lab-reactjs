@@ -1,50 +1,26 @@
-import logo from "./logo.svg";
-import "./App.css";
-import Navigation from "./components/Header/Navigation";
-import Films from "./components/Film/Films";
-import Login from "./page/Auth/Login/Login";
-
-import { useEffect } from "react";
+import { BrowserRouter } from 'react-router-dom';
+import {
+  Routes,
+  Route,
+} from "react-router-dom";
+import Layout from './components/Layout/Layout';
+import Home from './page/Home/Home';
+import Contact from './page/Contact/Contact';
+import Detail from './components/Film/Detail/Detail';
+import News from './page/News/News';
 
 function App() {
-
-  useEffect(() => {
-    // Check if the YouTube Player API is loaded
-    if (typeof window.YT !== "undefined") {
-      // Create a new player object
-      const player = new window.YT.Player("player", {
-        width: "100%",
-        height: "822",
-        videoId: "3F_feNb4oYQ",
-        playerVars: {
-          modestbranding: 1 // Hide the title of the video
-        },
-        events: {
-          onReady: onPlayerReady,
-        },
-      });
-    }
-  }, []);
-
-  function onPlayerReady(event) {
-    event.target.playVideo();
-  }
-
   return (
-    <>
-      <div className="Film-Container">
-        <div id="player"></div>
-        <div className="banner_bottom_cover"></div>
-      </div>
-      <header className="header">
-        <Navigation />
-      </header>
-      <main className="body">
-        <Films />
-      </main>
-      {/* <Login/> */}
-      <div className="concord-img-gradient"></div>
-    </>
+    <BrowserRouter>
+      <Routes>
+          <Route  path='/' element={<Layout/>}>
+            <Route path='/' element={<Home/>}/>
+            <Route path='/contact' element={<Contact />}/>
+            <Route path='/detail/:id' element={<Detail/>}/>
+            <Route path='/news' element={<News/>}/>
+          </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

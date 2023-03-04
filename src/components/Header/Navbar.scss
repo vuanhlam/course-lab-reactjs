@@ -1,57 +1,29 @@
-
-.header {
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  left: 0;
-  background-image: linear-gradient(180deg,rgba(0,0,0,.7) 5%,transparent);
-  transition: all .7s;
-  
-  .navbar {
-    height: 90px;
-    background:  #141414;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 48px;
+.Header {
     background-color: transparent;
-  }
-
-  .header_black {
-    background: #141414;
-  }
-
-  .navbar__list {
-    display: inline-flex;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-image: linear-gradient(180deg,rgba(0,0,0,.7) 5%,transparent);
+    transition: all .7s;
+    height: 90px;
     line-height: 90px;
-    padding: 0;
-    margin: 0;
-  }
+}
 
-  .navbar__item {
-    list-style-type: none;
-  }
+.Header_black {
+    background: #141414;
+}
 
-  .navbar__item:nth-child(2) {
-    padding-left: 30px;
-  }
+.Header__logo {
+    width: 167px;
+    height: 45px;
+    margin-left: 3%;
+    line-height: 90px;
+    cursor: pointer;
+}
 
-  .navbar__link {
-    text-decoration: none;
-    color: #e5e5e5;
-    font-size: 20px;
-    padding: 20px;
-  }
-
-  .active {
-    color: #fff;
-    font-size: 1.005vw;
-    font-weight: bolder;
-    text-decoration: none;
-  }
-
-  .navbar__option {
+.navbar__option {
 
 
     label {
@@ -78,7 +50,7 @@
       width: 20px;
       background: #f2f2f2;
       border-radius: 50%;
-      top: 4px;
+      top: 2px;
       left: 4px;
       transition: 0.8s ease;
       box-shadow: 0 0px 10px rgb(0 0 0 / 20%);
@@ -89,10 +61,10 @@
       position: absolute;
       height: 18px;
       width: 18px;
-      border: 3px solid rgba(198, 247, 253, 0.3);
+      border: 2px solid rgba(198, 247, 253, 0.3);
       border-radius: 50%;
-      top: 2px; 
-      left: 2px;
+      top: 1px; 
+      left: 3px;
       transition: 0.8s ease;
       box-shadow: 0 0 50px rgb(0 0 0 / 18%);
     }
@@ -107,15 +79,15 @@
     }
 
     input:checked ~ label::after {
-      left: 76px;
+      left: 72px;
       transform: translateX(-100%);
       background: #777ba5;
 
     }
 
     input:checked ~ label::before {
-      left: 78px;
-      border: 3px solid rgba(90, 79, 136, 0.2);
+      left: 73px;
+      border: 2px solid rgba(90, 79, 136, 0.2);
       transform: translateX(-100%);
     }
 
@@ -141,4 +113,3 @@
     }
 
   }
-}

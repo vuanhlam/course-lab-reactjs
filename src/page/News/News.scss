@@ -1,0 +1,46 @@
+.new-page {
+    width: 1279px;
+    margin: 0 auto;
+    // background-color: orange;
+    padding-top: 100px;
+
+    .hero {
+        display: flex;
+
+        .hero__banner {
+
+        }
+
+        .hero__banner-image {
+            width: 849px;
+            height: 547px;
+            object-fit: cover;
+            display: inline-block;
+            margin: 0 8px 8px 8px;
+        }
+
+        .hero__upnext {
+            // background-color: #111111;
+        }
+    }
+
+    .featured-container {
+        overflow: auto hidden;
+    }
+    ::-webkit-scrollbar {
+        width: 10px;
+        height: 8px;
+    }
+      
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #888;
+      }
+      
+      
+}
